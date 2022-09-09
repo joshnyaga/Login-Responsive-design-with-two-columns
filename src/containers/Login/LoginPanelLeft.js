@@ -5,7 +5,6 @@ import google from "../../images/Google.png";
 import Input from "../../components/input/Input";
 const LoginPanelLeft = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [deleteInput, setDeleteInput] = useState(false);
   return (
     <div className="column-left">
       <div className="logo">
@@ -18,21 +17,13 @@ const LoginPanelLeft = () => {
           Please fill your detail to access your account.
         </div>
         <div className="form">
-          {deleteInput ? (
-            <Input
-              label="Email"
-              type="email"
-              placeHolder="
+          <Input
+            label="Email"
+            type="email"
+            placeHolder="debra.hot@example.com
 "
-            />
-          ) : (
-            <Input
-              label="Email"
-              type="email"
-              placeHolder="debra.hot@example.com
-"
-            />
-          )}
+          />
+
           {showPassword ? (
             <Input
               label="Password"
