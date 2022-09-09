@@ -1,0 +1,30 @@
+.form-group {
+  padding: 0.2rem 0;
+}
+.form-group label {
+  color: var(--secondary-color);
+  line-height: 2rem;
+}
+.form-input {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+}
+.form-input,
+.form-input::placeholder {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--accent-2);
+  font-family: "Inter", sans-serif;
+  padding: 0.7rem;
+  color: #667085;
+}
+.form-input img {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 20px;
+}
+.active {
+  background-color: #667085;
+}

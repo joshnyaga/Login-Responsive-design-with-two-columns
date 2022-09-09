@@ -1,0 +1,123 @@
+.login-container {
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 40px;
+  display: flex;
+}
+
+.column-left {
+  flex: 0 1 50%;
+  position: relative;
+}
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 3rem;
+}
+.logo img {
+  width: 30px;
+}
+.slogan {
+  font-size: 1em;
+  font-weight: 500;
+}
+.tagline-header {
+  color: #667085;
+  line-height: 3rem;
+}
+.login-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.form {
+  padding: 2rem 0;
+}
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.checkbox {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.checkbox label {
+  color: var(--secondary-color);
+}
+.forgot-password {
+  color: var(--primary-color);
+}
+
+.btn span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tagline-account {
+  color: var(--secondary-color);
+  font-size: 0.9em;
+  line-height: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+.tagline-account span {
+  color: var(--primary-color);
+}
+.column-right {
+  flex: 0 1 49%;
+}
+.image-container {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  margin: 2rem auto;
+  background-color: var(--BG);
+
+  border-radius: 40px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1027px) {
+  .login-wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .login-wrapper {
+    width: 80%;
+  }
+  .column-right {
+    display: none;
+  }
+  .column-left {
+    flex: 0 1 100%;
+    position: relative;
+  }
+  .logo {
+    margin: 3rem auto;
+    display: block;
+    width: 300px;
+    text-align: center;
+  }
+  .login-container {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .form-options {
+    font-size: 80%;
+  }
+}
